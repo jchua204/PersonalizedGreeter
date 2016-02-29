@@ -13,9 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/strNamePlaceholder"
+        android:text="@string/strFirstNamePlaceholder"
         android:ems="10"
-        android:id="@+id/edtxtNameField"
+        android:id="@+id/edtxtFirstNameField"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="96dp" />
@@ -25,10 +25,10 @@
         android:layout_height="wrap_content"
         android:text="@string/strGetGreeted"
         android:id="@+id/btnGreetMe"
-        android:layout_below="@+id/edtxtNameField"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
-        android:onClick="greetTheUser" />
+        android:onClick="greetTheUser"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/edtxtMiddleNameField"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,4 +48,25 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/strMiddleNamePlaceholder"
+        android:ems="10"
+        android:id="@+id/edtxtMiddleNameField"
+        android:layout_below="@+id/edtxtFirstNameField"
+        android:layout_alignLeft="@+id/edtxtFirstNameField"
+        android:layout_alignStart="@+id/edtxtFirstNameField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/strLastNamePlaceholder"
+        android:ems="10"
+        android:id="@+id/edtxtLastNameField"
+        android:layout_below="@+id/edtxtMiddleNameField"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
